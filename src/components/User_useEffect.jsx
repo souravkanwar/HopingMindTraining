@@ -6,31 +6,31 @@ function User_useEffect() {
     const [userData, setUserData] = useState()
     const getData = () => {
         axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10')
-       .then(response => {
-        console.log(response.data);
-        setUserData(response.data);
-      })
-       .catch(error => {
-        console.error('Error Fetching data:', error);
-      });
-    } 
+            .then(response => {
+                console.log(response.data);
+                setUserData(response.data);
+            })
+            .catch(error => {
+                console.error('Error Fetching data:', error);
+            });
+    }
     useEffect(() => {
         getData()
     }, [])
-  return (
-    <div>
-        {
-            userData?.map((obj) => {
-                return(
-                    <>
-                        <h1>User ID:{obj.id}</h1>
-                        <p>title:{obj.title}</p>
-                    </>
-                )
-            })
-        }
-    </div>
-  )
+    return (
+        <div>
+            {
+                userData?.map((obj) => {
+                    return (
+                        <>
+                            <h1>User ID:{obj.id}</h1>
+                            <p>Title:{obj.title}</p>
+                        </>
+                    )
+                })
+            }
+        </div>
+    )
 }
 
 export default User_useEffect

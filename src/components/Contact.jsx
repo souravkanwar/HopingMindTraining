@@ -22,6 +22,9 @@ function Contact() {
     
     const handleClear=()=>{
         setName('')
+        setEmail('')
+        setMessage('')
+        setSubject('')
     }
 
     const handleClick = async (e) => {
@@ -77,7 +80,7 @@ function Contact() {
                     <button onClick={handleClear}>clear  Message</button>
                 </div>
                 <div className='city_img'>
-                    <img src='images/city.png' />
+                    <img src='/Images/pexels-valentin-antonucci-1653327-scaled.jpg' />
                 </div>
             </div>
         </div>
