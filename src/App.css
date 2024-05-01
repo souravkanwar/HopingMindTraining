@@ -1,0 +1,245 @@
+body{
+  font-family: "Raleway", sans-serif;;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.header ul{
+  display:flex;
+}
+.header ul li{
+  list-style: none;
+  padding: 1rem;
+}
+.image{
+  background-image: url('public/Images/satoru_gojo_4k_hd_jujutsu_kaisen.jpg');
+  height: 80vh;
+  width: 100%;
+  background-size:cover;
+  position: relative;
+  display: flex;
+}
+.content{
+  color: white;
+  position: relative;
+  top: 60%;
+}
+.point{
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin-right: 10px;
+}
+.point:hover{
+  background-color: skyblue;
+  color: black;
+  transition: 10ms;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+}
+p{
+  font-size: 24px;
+}
+
+.about h2, p{
+
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about_card{
+  display: flex;
+  grid-template-columns: 25% 25% 25% 25%;
+  
+}
+.about_card_item {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+} 
+.about_card_item img{
+width:30px;
+}
+.about_design{
+  display: grid;
+  grid-template-columns: 50%  50%;
+ background-color: white;
+ padding: 5rem;
+} 
+.about_design h2,p{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about_design img{
+  width: 100%;
+}
+.team_inner{
+  padding: 1rem;
+}
+.team_inner img{
+  width: 100%;
+}
+.team_inner button{
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 1rem;
+ 
+border-color: black;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.team_inner h3{
+  text-align: center;
+}
+.fa{
+  display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.promo{
+  text-align: center;
+  background-color: grey;
+  display: grid;
+  font-size: 30px;
+  float: left;
+  width: 100%;
+  box-sizing: inherit;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  grid-template-columns: 25% 25% 25% 25%;
+
+}
+.promo_item{
+padding: 1rem;
+color: white;
+}
+
+.heading h2{
+  margin-top: 1rem;
+  text-decoration: solid;
+}
+.heading h2, p{
+  padding-top: 1rem;
+  text-align: center;
+}
+.work_gallery{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  
+
+}
+.work_items{
+  padding: 1rem;
+}
+.work_items img{
+  width: 100%;
+}
+
+.work_skill{
+  display: grid;
+  padding: 1rem;
+}
+.work_skill p{
+  font-size: 16px;
+  text-align: left;
+}
+.work_skill progress{
+  padding: 1.5rem;
+  width: 100%;
+
+}
+
+.work_desgin{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.work_inner h2{
+text-align: center;
+}
+.pricing{
+  background-color: grey;
+}
+.pricing_outer{
+  text-align: center;
+}
+.pricing_inner{
+display: grid;
+grid-template-columns: 33% 33% 33%
+}
+.pricing_inner h2{
+  text-align: center;
+}
+.pricing_inner ul{
+  border-color: white;
+  border-width: 10px;
+}
+.pricing_inner ul li{
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0px 12px 0px;
+  }
+  .pricing_inner ul li:first-child{
+    background-color: #000;
+    color: #fff;
+  }
+  .pricing_inner ul li:last-child{
+    background-color: #ddd;
+    color: #fff;
+  }
+  .pricing_inner ul:nth-child(even) li:first-child{
+    background-color: red;
+    color: #fff;
+  }
+  .pricing_inner ul li button{
+    background-color: #000;
+    color: #fff;
+    border: #000;
+    padding: 12px 24px;
+  }
+  .Contact{
+    background-color: #f1f1f1;
+  }
+  .contact_Icon img {
+    width: 30px;
+  }
+  .about h2,.about p{
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .contact_Icon {
+    display: flex;
+    align-items: center;
+  }
+  .inner_container{
+    padding: 2rem;
+  }
+  
+  .contact_Icon p {
+    text-align: start;
+    padding-left: 2rem;
+  }
+  
+  .contact_form input {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .city_img img {
+    width: 100%;
+  }
