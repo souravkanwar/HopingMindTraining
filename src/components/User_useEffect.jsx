@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 function User_useEffect() {
     const [userData, setUserData] = useState()
     const getData = () => {
-        axios.get('https://jsonplaceholder.typicode.com/post?_limit=10')
+        axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10')
        .then(response => {
         console.log(response.data);
         setUserData(response.data);
