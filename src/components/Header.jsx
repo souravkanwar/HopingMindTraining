@@ -1,6 +1,13 @@
 import React from "react";
+import Login_Modal from "./Login_Modal";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 function Header() {
+    const[modalIsOpen, setIsOpen] = useState(false);
+    function openModal(){
+        setIsOpen(!modalIsOpen);
+    }
+    
     return (
         <>
             <div className="header">
@@ -24,6 +31,12 @@ function Header() {
                     </li>
                     <li>
                         <Link to="/contact">CONTACT</Link>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <button onClick={openModal}>Login</button>
+                        <Login_Modal openModal={modalIsOpen}  /> 
                     </li>
                 </ul>
             </div>
