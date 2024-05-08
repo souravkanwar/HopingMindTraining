@@ -17,13 +17,12 @@ function Login_Modal({openModal}) {
 
   return (
     <div>
-      <Modal
-        isOpen={openModal}
+      <Modal isOpen={openModal}
         style={customStyles}
-        contentLabel="Example Modal"
-      >
-       
-        <div>I am a modal</div>
+        contentLabel="Example Modal" >
+       <div>Gurdeep</div>
+       <div>Nitin</div>
+        <div>Sourav</div>
         
       </Modal>
     </div>
