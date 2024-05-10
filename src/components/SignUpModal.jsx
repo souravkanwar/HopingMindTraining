@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-
+import axios from 'axios';
 const customStyles = {
     content: {
         top: '50%',
@@ -44,7 +44,7 @@ function SignUpModal(props) {
         setPassword(e.target.value);
     }
 
-    const handleSignup = (e) => {
+    const handleSignup =async (e) => {
         e.preventDefault();
         const data = {
             email: email,
@@ -54,7 +54,12 @@ function SignUpModal(props) {
             userName:userName, 
             phone: phone,
         }
-        console.log(data)
+        try {
+            const response = await axios.post('http://localhost:3005/signup', data);
+            console.log('Response:', response.data);
+        } catch (error) {
+            console.error('Error:', error.message);
+        }
     }
 
     return (
